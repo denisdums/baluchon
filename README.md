@@ -1,6 +1,6 @@
 ![Baluchon](assets/images/baluchon.svg) 
 
-#Baluchon
+##Baluchon
 
 A starter kit for frontend tests
 
