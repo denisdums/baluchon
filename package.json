@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "cross-env NODE_ENV=development run-s mix",
+    "build:production": "cross-env NODE_ENV=production run-s clean mix",
+    "start": "cross-env NODE_ENV=development run-s \"mix -- --watch\"",
+    "hot": "cross-env NODE_ENV=development run-s build mix:hot",
+    "mix": "webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "mix:hot": "webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "browser-sync": "^2.26.12",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-plugin-import": "^2.22.0",
+    "laravel-mix": "^6.0.31",
+    "laravel-mix-copy-watched": "^2.3.1",
+    "npm-run-all": "^4.1",
+    "postcss": "^8.3.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.7",
+    "sass-loader": "11.0.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "dependencies": {
+    "@ky-is/tailwind-color-palette": "^1.0.0",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
+    "@tailwindcss/line-clamp": "^0.3.0",
+    "alpinejs": "^3.5.2",
+    "autoprefixer": "^10.3.7",
+    "babel-loader": "^8.2.2",
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.64.2"
+  }
+}

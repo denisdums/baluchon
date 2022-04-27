@@ -1,0 +1,26 @@
+/**
+ * Config
+ */
+@import "_config/font-faces";
+
+/**
+ * Tailwind imports
+ */
+@tailwind base;
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+/**
+ * Base
+ */
+@import "base/elements";
+@import "base/forms";
+@import "base/lists";
+@import "base/media";
+@import "base/tables";
+@import "base/text-formatting";
+
+/**
+ * Partials
+ */
