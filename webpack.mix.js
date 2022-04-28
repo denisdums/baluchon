@@ -4,7 +4,10 @@ require('laravel-mix-copy-watched');
 
 mix
     .setPublicPath('./public/dist')
-    .browserSync('localhost:80');
+    .browserSync({
+        proxy:'baluchon.docker',
+        files: ['assets/**/*', 'public/**/*']
+    });
 
 
 mix
