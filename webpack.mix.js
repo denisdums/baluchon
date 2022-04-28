@@ -3,8 +3,8 @@ const tailwindcss = require('tailwindcss');
 require('laravel-mix-copy-watched');
 
 mix
-    .setPublicPath('./dist')
-    .browserSync('localhost/baluchon');
+    .setPublicPath('./public/dist')
+    .browserSync('localhost:80');
 
 
 mix
@@ -18,8 +18,8 @@ mix
     .js('./assets/js/app.js', 'js')
 
 mix
-    .copyWatched('./assets/images/**', 'dist/images', {base: './assets/images'})
-    .copyWatched('./assets/fonts/**', 'dist/fonts', {base: './assets/fonts'});
+    .copyWatched('./assets/images/**', 'public/dist/images', {base: './assets/images'})
+    .copyWatched('./assets/fonts/**', 'public/dist/fonts', {base: './assets/fonts'});
 
 mix.options({processCssUrls: false});
 
