@@ -17,7 +17,7 @@ A starter kit for frontend tests
     ```
   and add :
   ```bash
-  127.0.0.1 baluchon.docker
+    127.0.0.1 baluchon.docker
   ```
 - ### Install node-modules
     ```bash
