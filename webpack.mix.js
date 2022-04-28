@@ -6,7 +6,7 @@ mix
     .setPublicPath('./public/dist')
     .browserSync({
         proxy:'baluchon.docker',
-        files: ['assets/**/*', 'public/**/*']
+        files: ['assets/**/*', 'public/**/*', '!public/dist/**/*'],
     });
 
 

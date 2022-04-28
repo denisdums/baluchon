@@ -16,9 +16,9 @@ module.exports = {
         require('@tailwindcss/line-clamp'),
     ],
     purge: {
-        enabled: true,
+        enabled: false,
         content: [
-            './index.html',
+            './public/index.html',
         ],
     },
 }
